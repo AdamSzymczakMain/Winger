@@ -6,7 +6,7 @@ import { ArrowLeft, Copy, RefreshCw, Heart, AlertCircle } from 'lucide-react-nat
 import { styles } from '../styles';
 
 // KLUCZ API OPENAI
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = 
 
 // --- EKRANY GŁÓWNYCH FUNKCJONALNOŚCI ---
 
@@ -1300,3 +1300,4 @@ FORMAT (zwróć TYLKO JSON):
     </LinearGradient>
   );
 };
+
