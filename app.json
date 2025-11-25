@@ -3,6 +3,7 @@
     "name": "winger",
     "slug": "snack-ca0d4e61-f90e-44aa-97d2-079f4724f1e3",
     "version": "1.0.0",
+    "sdkVersion": "54.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,18 +14,29 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Pozwól aplikacji Winger na dostęp do galerii, aby analizować zdjęcia i generować lepsze odpowiedzi.",
+        "NSCameraUsageDescription": "Pozwól aplikacji Winger na dostęp do aparatu, abyś mógł szybko zrobić zdjęcie do analizy."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "Components"
+    "description": "Components",
+    "extra": {
+      "openaiApiKey": ""
+    }
   }
 }
